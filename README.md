@@ -12,3 +12,9 @@ Here's a few of the things in this pack:
  </ul>
  
  This is all open-source, so come and add your own!
+ 
+ 
+ <br/>
+ 
+ 
+ <sub>Awesome note: this comes with a <strong>create-p</strong> macro to create your own predicates!</sub>
