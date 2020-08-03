@@ -52,8 +52,10 @@
   (/ (comb (* 2 n) n)
      (1+ n)))
 
-(defun fibp (number)
-  (loop for i from 1
-     until (>= (fib i) number)
-     finally
-       (return (equalp (fib i) number))))
+;; add predicates for all necessary forms
+
+(create-p (fib))
+
+(create-p (catn))
+
+(create-p (fact))
