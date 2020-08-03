@@ -17,4 +17,6 @@ Here's a few of the things in this pack:
  <br/>
  
  
- <sub>Awesome note: this comes with a <strong>create-p</strong> macro to create your own predicates!</sub>
+ ## Awesome notes
+This comes with a **create-p** macro to create your own predicates!<br/>
+Create your own functions for anything!
