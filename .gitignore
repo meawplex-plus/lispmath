@@ -1,3 +1,12 @@
+# So it doesn't put a config in the GitHub
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# CommonLisp general .gitignore content
 *.FASL
 *.fasl
 *.lisp-temp
