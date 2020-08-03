@@ -10,3 +10,5 @@ Here's a few of the things in this pack:
   <li>Fibonacci creators!</li>
   <li>_p versions of every function that comes (fib -> fibp)!!!!</li>
  </ul>
+ 
+ This is all open-source, so come and add your own!
