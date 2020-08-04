@@ -1,5 +1,5 @@
 (defmacro create-p (func)
-  (let ((funcname (intern (concatenate 'string (symbol-name func) "P"))))
+  (let ((funcname (intern (concatenate 'string (symbol-name `,func) "P"))))
     `(defun ,funcname (number)
        (loop for i from 1
           until (>= (,func i) number)
@@ -54,8 +54,8 @@
 
 ;; add predicates for all necessary forms
 
-(create-p (fib))
+(create-p catn)
 
-(create-p (catn))
+(create-p fib)
 
-(create-p (fact))
+(create-p fact)
