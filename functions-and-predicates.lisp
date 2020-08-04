@@ -1,3 +1,14 @@
+(defun source-p (func)
+  "Return source code for predicate defining function.
+Expects quote function name as an argument."
+  (let ((funcname (intern (concatenate 'string (symbol-name `,func) "P"))))
+    `(defun ,funcname (number)
+       (loop for i from 1
+          until (>= (,func i) number)
+          finally
+            (return (equalp (,func i) number))))))
+
+
 (defmacro create-p (func)
   (let ((funcname (intern (concatenate 'string (symbol-name `,func) "P"))))
     `(defun ,funcname (number)
