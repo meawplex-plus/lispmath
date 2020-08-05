@@ -4,11 +4,11 @@
   "Return source code for predicate defining function.
 Expects quote function name as an argument."
   (let ((funcname (intern (concatenate 'string (symbol-name `,func) "P"))))
-    `(defun ,funcname (number)
+    `(defun ,funcname (args)
        (loop for i from 1
-          until (>= (,func i) number)
+          until (>= (,func i) args)
           finally
-            (return (equalp (,func i) number))))))
+            (return (equalp (,func i) args))))))
 
 
 (defmacro create-p (func)
@@ -16,11 +16,11 @@ Expects quote function name as an argument."
 Does NOT expect quote function name as an argument.
 Rather, expects straight name. (i.e. (create-p fofo).)"
   (let ((funcname (intern (concatenate 'string (symbol-name `,func) "P"))))
-    `(defun ,funcname (number)
+    `(defun ,funcname (args)
        (loop for i from 1
-          until (>= (,func i) number)
+          until (>= (,func i) args)
           finally
-            (return (equalp (,func i) number))))))
+            (return (equalp (,func i) args))))))
 
 ; main lisp-math functions
 
