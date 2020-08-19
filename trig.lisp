@@ -28,5 +28,5 @@ Returns number of type double-float; in other words, (tan-degrees 45) -> 1.0d0."
   (/ 1 (tan-degrees degrees)))
 
 (defun cosec-degrees (degrees)
-  "Calculate the cosecant of an angle, which is 1/sec(angle).
+  "Calculate the cosecant of an angle, which is 1/sin(angle).
   Returns number of type double float; in other words, (cosec-degrees 90) -> 1.0d0."
