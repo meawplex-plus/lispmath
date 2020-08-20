@@ -26,4 +26,4 @@
 *.wx32fsl
 
 # Extra content for the computer mohindertalafuse uses coz its buggy
-*.lisp~
+*.*~
