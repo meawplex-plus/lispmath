@@ -1,7 +1,8 @@
 (asdf:defsystem #:lispmath
-    :version "0.1.1"
-    :description "0.1.1"
+    :version "1.0.0"
+    :description "PUBLIC API 1"
     :author "mohindertalafuse (Mo Talafuse) and stalafuse (Scott Talafuse)"
     :serial t
-    :components ((:file "functions-and-predicates")
+    :components ((:file "package")
+		 (:file "functions-and-predicates")
 		 (:file "trig")))
