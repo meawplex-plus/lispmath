@@ -1,4 +1,6 @@
-; define our create-p macro and source-p function
+(in-package #:lispmath)
+
+;define our create-p macro and source-p function
 
 (defun source-p (func)
   "Return source code for predicate defining function.
@@ -11,16 +13,18 @@ Expects quote function name as an argument."
             (return (equalp (,func i) args))))))
 
 
-(defmacro create-p (func)
+(defmacro create-p (func docstring argname)
   "Return fully defined predicate function.
 Does NOT expect quote function name as an argument.
-Rather, expects straight name. (i.e. (create-p fofo).)"
+Rather, expects straight name. (i.e. (create-p fofo).)
+Requires docstring as argument."
   (let ((funcname (intern (concatenate 'string (symbol-name `,func) "P"))))
-    `(defun ,funcname (args)
+    `(defun ,funcname (,argname)
+       ,docstring
        (loop for i from 1
-          until (>= (,func i) args)
+          until (>= (,func i) ,argname)
           finally
-            (return (equalp (,func i) args))))))
+            (return (equalp (,func i) ,argname))))))
 
 ; main lisp-math functions
 
@@ -74,8 +78,8 @@ Thus, (genptrow 1) evaluates to everything on row 0."
 
 ; add predicates for all necessary forms
 
-(create-p catn)
+(create-p catn "Predicate for catn func." n)
 
-(create-p fib)
+(create-p fib "Predicate for fib func." n)
 
-(create-p fact)
+(create-p fact "Predicate for fact func." n)
