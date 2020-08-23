@@ -12,7 +12,7 @@ And we have a *lot* of things in the pack, including:
  </ul>
  
  This is all open-source, so come and add your own things!
- Visit https://mohindertalafuse.github.io for the index!
+ Visit the <a href='https://mohindertalafuse.github.io'>GitHub Pages site</a> for the index!
  
  <br/>
  
