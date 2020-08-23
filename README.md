@@ -1,4 +1,4 @@
-# lisp-math
+# lispmath
 A math function-pack for lisp.
 
 #### Have you ever wanted a Catalan number generator for your lisp?
