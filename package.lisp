@@ -1,6 +1,6 @@
 (in-package #:cl-user)
 (defpackage #:lispmath
-  (:nicknames "GitHub at https://github.com/mohindertalafuse/lispmath")
+  (:nicknames "*No nicknames*")
   (:documentation "Handy math tools for Common Lisp.")
   (:use #:cl)
   (:export
