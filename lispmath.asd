@@ -4,7 +4,7 @@
     :author "mohindertalafuse (Mo Talafuse) and stalafuse (Scott Talafuse)"
     :homepage "https://mohindertalafuse.github.io"
     :bug-tracker "https://github.com/mohindertalafuse/lispmath/issues"
-    :source-control (:git "https://github.com/mohindertalafuse/lispmath.git")
+    :source-control (:git "https://github.com/mohindertalafuse/lispmath")
     :serial t
     :components ((:file "package")
 		 (:file "functions-and-predicates")
