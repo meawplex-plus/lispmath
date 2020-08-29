@@ -19,4 +19,4 @@ And we have a *lot* of things in the pack, including:
  
  ## Awesome notes
 This comes with a **create-p** macro to create your own predicates!<br/>
-We love new people – come on in and join the fun!
+Join the official Discord server! Here is the <a href='https://discord.gg/TrpZXtF'>invite</a>.
