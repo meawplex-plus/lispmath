@@ -12,9 +12,9 @@ And we have a *lot* of things in the pack, including:
  </ul>
  
  This is all open-source, so come and add your own things!
- Visit the <a href='https://mohindertalafuse.github.io'>GitHub Pages site</a> for the index!
+ Visit the <a href='https://mohindertalafuse.github.io/lispmath'>GitHub Pages site</a> for the index!
 
- Visit the definition index <a href="https://mohindertalafuse.github.io/">here</a>, and report issues in the <a href='https://github.com/mohindertalafuse/lispmath/issues'>issues tab</a>.
+ Visit the definition index <a href="https://mohindertalafuse.github.io/lispmath/defindexes.html">here</a>, and report issues in the <a href='https://github.com/mohindertalafuse/lispmath/issues'>issues tab</a>.
  <br/>
  
  
