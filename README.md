@@ -1,7 +1,7 @@
 # lispmath
 A math function-pack for lisp.
 
-#### Have you ever wanted a Catalan number generator for your lisp?
+### Have you ever wanted a Catalan number generator for your lisp?
 Well, this has that, and basically, everything but the kitchen sink!
 
 And we have a *lot* of things in the pack, including:
