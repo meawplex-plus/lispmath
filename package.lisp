@@ -27,4 +27,13 @@
    #:genptrow
    #:genpt
    #:catn
-   #:catnp))
+   #:catnp
+   #:tau
+   #:τ
+   #:2π
+   #:2pi
+   #:π
+   #:ellipse-perimeter
+   #:ellipse-area
+   #:circle-area
+   #:circumference))
