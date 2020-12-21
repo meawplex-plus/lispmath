@@ -20,8 +20,8 @@
    #:source-p
    #:create-p
    #:genfib
-   #:fact
-   #:factp
+   #:factorial
+   #:factorialp
    #:perm
    #:comb
    #:genptrow
