@@ -55,13 +55,13 @@ Requires docstring as argument."
 
 (defun perm (n k)
   "Take N and K and return P(N, K). (P(N, K) is the permutations of N and K.)"
-  (/ (fact n)
-     (fact (- n k))))
+  (/ (factorial n)
+     (factorial (- n k))))
 
 (defun comb (n k)
   "Take N and K and return C(N, K). (C(N, K) is the combinations of N and K.)"
   (/ (perm n k)
-     (fact k)))
+     (factorial k)))
 
 (defun genptrow (n)
   "Take N and return the Nth row of Pascal's Triangle.
@@ -88,4 +88,4 @@ Thus, (genptrow 1) evaluates to everything on row 0."
 
 (create-p fib "Predicate for fib func." n)
 
-(create-p fact "Predicate for fact func." n)
+(create-p factorial "Predicate for factorial func." n)
