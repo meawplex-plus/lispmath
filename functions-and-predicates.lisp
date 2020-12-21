@@ -41,18 +41,17 @@ Requires docstring as argument."
   (mapcar #'fib (loop for i from 1 to list-size collect i)))
 
 (defun factorial (a &optional (fact 1))
- "Calculate factorial. Optional second arg for multifactorial." ; ksaj
+ "Calculate factorial. Optional second arg for multifactorial."
 
   (cond
-    ((<= a 0) (format t "Fibonacci of < 1 is not defined"))
-    ((=  1 a) (values 1))
-    ((=  2 a) (values 1))
-    (t        (reduce #'* 
-                (loop for     i 
-                      from    a 
-                      downto  1 
-                      by      fact 
-                      collect i)))))
+    ((< a 0) (format t "Factorial of < 0 is not defined"))
+    ((= a 0) (values 1))
+    (t       (reduce #'* 
+               (loop for     i 
+                     from    a 
+                     downto  1 
+                     by      fact 
+                     collect i)))))
 
 (defun perm (n k)
   "Take N and K and return P(N, K). (P(N, K) is the permutations of N and K.)"
