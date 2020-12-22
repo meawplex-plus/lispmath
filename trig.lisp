@@ -1,12 +1,12 @@
 (in-package #:lispmath)
 
 
-(defparameter *sin-degrees-identity* 90)
-(defparameter *cos-degrees-identity* 360)
-(defparameter *tan-degrees-identity* 45)
-(defparameter *sec-degrees-identity* 0)
-(defparameter *cot-degrees-identity* 45)
-(defparameter *csc-degrees-identity* 90)
+(defconstant *sin-degrees-identity* 90)
+(defconstant *cos-degrees-identity* 360)
+(defconstant *tan-degrees-identity* 45)
+(defconstant *sec-degrees-identity* 0)
+(defconstant *cot-degrees-identity* 45)
+(defconstant *csc-degrees-identity* 90)
 
 (defun hypot (leg1 leg2)
   "Calculate hypotenuse length of triangle made by two legs."
