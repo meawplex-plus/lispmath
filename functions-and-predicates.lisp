@@ -40,22 +40,28 @@ Requires docstring as argument."
   "Take LIST-SIZE and return a list of the first LIST-SIZE fibonacci numbers."
   (mapcar #'fib (loop for i from 1 to list-size collect i)))
 
-(defun fact (n)
-  "Take N and return N! (N factorial)."
+(defun factorial (a &optional (fact 1))
+ "Calculate factorial. Optional second arg for multifactorial."
+
   (cond
-    ((< n 0) (format t "Factorial of < 0 is undefined"))
-    ((= n 0) (values 1))
-    (t (* n (fact (- n 1))))))
+    ((< a 0) (format t "Factorial of < 0 is not defined"))
+    ((= a 0) (values 1))
+    (t       (reduce #'* 
+               (loop for     i 
+                     from    a 
+                     downto  1 
+                     by      fact 
+                     collect i)))))
 
 (defun perm (n k)
   "Take N and K and return P(N, K). (P(N, K) is the permutations of N and K.)"
-  (/ (fact n)
-     (fact (- n k))))
+  (/ (factorial n)
+     (factorial (- n k))))
 
 (defun comb (n k)
   "Take N and K and return C(N, K). (C(N, K) is the combinations of N and K.)"
   (/ (perm n k)
-     (fact k)))
+     (factorial k)))
 
 (defun genptrow (n)
   "Take N and return the Nth row of Pascal's Triangle.
@@ -82,4 +88,4 @@ Thus, (genptrow 1) evaluates to everything on row 0."
 
 (create-p fib "Predicate for fib func." n)
 
-(create-p fact "Predicate for fact func." n)
+(create-p factorial "Predicate for factorial func." n)
