@@ -36,7 +36,7 @@
    #:ellipse-perimeter
    #:ellipse-area
    #:circle-area
-   #:circumference))
+   #:circumference
    #:sin-degrees-identity
    #:cos-degrees-identity
    #:tan-degrees-identity

@@ -1,17 +1,17 @@
 (in-package #:lispmath)
 
 ;; Some useful constants, no earmuffs so they are more like pi
-(defconstant tau (+ pi pi) "Tau is actually used more often than pi.")
-(defconstant τ   tau       "Some people like to use symbols.")
-(defconstant 2π  tau       "Same with its common nickname.")
-(defconstant 2pi tau       "And this one.")
-(defconstant π   pi        "And lest we forget...")
+(defconstant tau (+ pi pi) "Going back to tau/pi. The literal name.")
+(defconstant 2pi tau       "Another way to represent tau. In fact, tau is more often use than pi!")
+(defconstant 2π  tau       "And this too, but instead with the symbol for pi.")
+(defconstant π   pi        "There's going to be one last symbol...")
+(defconstant τ   tau       "This one.")
 
 ;;
 (defun ellipse-perimeter (a b)
  "Matt Parker's algorithm for estimating the perimeter of an ellipse,
   where perimeter ≈ π[53a/3 + 717b/35 - √(269a^2 + 667ab + 371b^2)]
-Implemented by Karsten Johansson https://github.com/ksaj/ksaj-ellipses"
+Implemented by Karsten Johansson (https://github.com/ksaj/ksaj-ellipses)"
 
   (check-type a number)   ; Keep code safe from injection
   (check-type b number)   ; 
@@ -31,7 +31,7 @@ Implemented by Karsten Johansson https://github.com/ksaj/ksaj-ellipses"
 
 ;;
 (defun ellipse-area (a b)
- "Calculate Area of an Ellipse. Implemented by Kasten Johansson."
+ "Calculate area of an ellipse. Implemented by Karsten Johansson."
 
   (check-type a number)   ; Keep code safe from injection
   (check-type b number)   ;
@@ -40,7 +40,7 @@ Implemented by Karsten Johansson https://github.com/ksaj/ksaj-ellipses"
 
 ;;
 (defun circle-area (radius)
- "Calculate Area of a Circle. Implemented by Karsten Johansson."
+ "Calculate area of a circle. Implemented by Karsten Johansson."
 
   (check-type radius number)
 
@@ -48,7 +48,7 @@ Implemented by Karsten Johansson https://github.com/ksaj/ksaj-ellipses"
 
 ;;
 (defun circumference (radius)
- "Calculate Circumference of a Circle"
+ "Calculate circumference of a circle. Implemented by Karsten Johansson."
 
   (check-type radius number)
 
