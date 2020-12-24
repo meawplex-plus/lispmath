@@ -42,10 +42,8 @@ Requires docstring as argument."
 
 (defun factorial (a &optional (fact 1))
  "Calculate factorial. Optional second arg for multifactorial."
-
   (cond
     ((< a 0) (format t "Factorial of < 0 is not defined"))
-    ((= a 0) (values 1))
     (t       (reduce #'* 
                (loop for     i 
                      from    a 
