@@ -1,6 +1,6 @@
 (asdf:defsystem #:lispmath
-    :version "1.0.0"
-    :description "PUBLIC API 1"
+    :version "1.2.0"
+    :description "The math tools you know you need"
     :author "mohindertalafuse (Mo Talafuse) and stalafuse (Scott Talafuse) and ksaj (Karsten Johansson)"
     :homepage "https://mohindertalafuse.github.io"
     :bug-tracker "https://github.com/mohindertalafuse/lispmath/issues"
