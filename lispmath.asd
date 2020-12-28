@@ -1,6 +1,6 @@
 (asdf:defsystem #:lispmath
     :version "1.2.0"
-    :description "The math tools you know you need"
+    :description "The handy dandy math pack"
     :author "mohindertalafuse (Mo Talafuse) and stalafuse (Scott Talafuse) and ksaj (Karsten Johansson)"
     :homepage "https://mohindertalafuse.github.io"
     :bug-tracker "https://github.com/mohindertalafuse/lispmath/issues"
