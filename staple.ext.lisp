@@ -1,3 +1,4 @@
+(setq *print-case* :downcase)
 (defmethod staple:template ((system (eql (asdf:find-system :lispmath))))
   (asdf:system-relative-pathname system #p"template.ctml"))
 (defclass my-page (staple:simple-page) ())

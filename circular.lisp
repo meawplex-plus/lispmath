@@ -2,7 +2,7 @@
 
 ;; Some useful constants, no earmuffs so they are more like pi
 (defconstant tau (+ pi pi) "Going back to tau/pi. The literal name.")
-(defconstant 2pi tau       "Another way to represent tau. In fact, tau is more often use than pi!")
+(defconstant 2pi tau       "Another way to represent tau. In fact, tau is more often used than pi!")
 (defconstant 2π  tau       "And this too, but instead with the symbol for pi.")
 (defconstant π   pi        "There's going to be one last symbol...")
 (defconstant τ   tau       "This one.")
