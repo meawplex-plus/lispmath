@@ -1,12 +1,12 @@
 (in-package #:lispmath)
 
 ;; Earmuffs omitted to match other constants. Some useful identities.
-(defconstant sin-degrees-identity 90 "For sine this time")
-(defconstant cos-degrees-identity 360 "Cosine identity in degrees")
-(defconstant tan-degrees-identity 45 "Tangent too")
-(defconstant sec-degrees-identity 0 "Secant identity")
-(defconstant cot-degrees-identity 45 "Same, but for cotangent")
-(defconstant csc-degrees-identity 90 "Cosecant this time")
+(defconstant +sin-degrees-identity+ 90 "For sine this time")
+(defconstant +cos-degrees-identity+ 360 "Cosine identity in degrees")
+(defconstant +tan-degrees-identity+ 45 "Tangent too")
+(defconstant +sec-degrees-identity+ 0 "Secant identity")
+(defconstant +cot-degrees-identity+ 45 "Same, but for cotangent")
+(defconstant +csc-degrees-identity+ 90 "Cosecant this time")
 
 (defun hypot (leg1 leg2)
   "Calculate hypotenuse length of triangle made by two legs."

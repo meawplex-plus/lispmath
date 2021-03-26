@@ -37,9 +37,9 @@
    #:ellipse-area
    #:circle-area
    #:circumference
-   #:sin-degrees-identity
-   #:cos-degrees-identity
-   #:tan-degrees-identity
-   #:sec-degrees-identity
-   #:cot-degrees-identity
-   #:csc-degrees-identity))
+   #:+sin-degrees-identity+
+   #:+cos-degrees-identity+
+   #:+tan-degrees-identity+
+   #:+sec-degrees-identity+
+   #:+cot-degrees-identity+
+   #:+csc-degrees-identity+))
